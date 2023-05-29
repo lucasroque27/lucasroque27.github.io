@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.topo {
+  height: 90px;
+  background-image: linear-gradient(to bottom, white, #f5f5f5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  text-decoration: none; /* Remover sublinhado */
+}
+
+.burguer {
+  height: 60px;
+  width: 60px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: white;
+}
+
+.burguer > div {
+  height: 6px;
+  width: 26px;
+  background-color: rgb(24, 18, 18);
+  margin: 8px 0;
+  border-radius: 3px;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 25px;
+  width: 60%;
+  z-index: 9999;
+}
+
+a,
+a:visited {
+  text-decoration: none; /* Remover sublinhado */
+  color: rgb(14, 12, 12);
+}
+
+.topo > ul > li {
+  margin: 0 10px;
+}
+
+a,
+a {
+  text-decoration: none;
+  color: rgb(14, 12, 12);
+  transition: transform 0.3s ease;
+}
+
+a:hover {
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 1000px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    height: 70%;
+    transition: 0.5s;
+    transform: translateX(100%);
+  }
+  .burguer {
+    display: flex;
+  }
+  .nav-active {
+    transform: translateX(0);
+  }
+}
+
+.topo > div > img {
+  width: 200px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.3s ease;
+}
+
+.topo > div:hover > img {
+  transform: scale(1.1);
+}
+
+
+
+.nav-active {
+  transform: translateX(0);
+}
+
+.linha1-active {
+  transform: translateY(9px) rotate(405deg);
+}
+
+.linha2-active {
+  display: none;
+}
+
+.linha3-active {
+  transform: translateY(-13px) rotate(-405deg);
+}
+
+#linha1,
+#linha2,
+#linha3 {
+  transition: 1s;
+}
+
+
+
+
+/* fim do BURGUER */
+
+/* FUNDO DO SITE */
+body {
+  background-image: url(fundos/bucetinha.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* FUNDO DO SITE */
+
+
+
+
+
+
+
+
+
+
+#contact {
+  
+  padding: 50px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+#contact form {
+  max-width: 400px;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#contact button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  
+}
+
+
+
+
+
+
+
+
+/* RODAÉ DO SITE */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to bottom right, #222222, #1a1717 );
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+}
+
+
+
+/*  FIM DO SITERODAÉ DO SITE */
