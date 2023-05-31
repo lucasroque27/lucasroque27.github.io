@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -58,7 +56,6 @@ a:visited {
   margin: 0 10px;
 }
 
-a,
 a {
   text-decoration: none;
   color: rgb(14, 12, 12);
@@ -69,8 +66,7 @@ a:hover {
   transform: scale(1.1);
 }
 
-
-@media (max-width: 1000px) {
+@media (max-width: 767px) {
   body {
     overflow-x: hidden;
   }
@@ -94,7 +90,7 @@ a:hover {
 
 .topo > div > img {
   width: 200px;
-  height: 100px;
+  height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -104,8 +100,6 @@ a:hover {
 .topo > div:hover > img {
   transform: scale(1.1);
 }
-
-
 
 .nav-active {
   transform: translateX(0);
@@ -128,9 +122,6 @@ a:hover {
 #linha3 {
   transition: 1s;
 }
-
-
-
 
 /* fim do BURGUER */
 
@@ -198,12 +189,54 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(to bottom right, #222222, #1a1717 );
+  background: linear-gradient(to bottom right, #222222, #1a1717);
   color: #fff;
   text-align: center;
   padding: 5px;
 }
 
+@media (max-width: 767px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+  }
+
+  footer div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  footer img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Fonte personalizada */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+@media (max-width: 767px) {
+  /* Adicione aqui os estilos específicos para dispositivos móveis */
+  .conteudo h1 {
+    font-size: 24px;
+  }
+
+  .conteudo h2 {
+    font-size: 18px;
+  }
+
+  .conteudo > div > img {
+    width: 100%;
+  }
+}
 
 
 /*  FIM DO SITERODAÉ DO SITE */
