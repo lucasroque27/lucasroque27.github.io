@@ -69,7 +69,6 @@ a:hover {
   transform: scale(1.1);
 }
 
-
 @media (max-width: 1000px) {
   body {
     overflow-x: hidden;
@@ -99,14 +98,11 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   transition: transform 0.3s ease;
-
 }
-
 
 .topo > div:hover > img {
   transform: scale(1.1);
 }
-
 
 .nav-active {
   transform: translateX(0);
@@ -130,9 +126,6 @@ a:hover {
   transition: 1s;
 }
 
-
-/* fim do BURGUER */
-
 /* FUNDO DO SITE */
 body {
   background-image: url(fundos/bucetinha.jpg);
@@ -141,15 +134,9 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
-
 /* FUNDO DO SITE */
 
-
-
-/* SOBRE A ORION*/
-
-
-
+/* SOBRE A ORION */
 .conteudo > div:nth-child(1) {
   margin-bottom: 30px;
 }
@@ -174,10 +161,9 @@ body {
   padding-bottom: 100px; /* Adicione um preenchimento inferior para acomodar o conteúdo */
 }
 
-
 .conteudo h1 {
   font-size: 32px;
-  color:black;
+  color: black;
   font-weight: bold;
   margin-bottom: 20px;
   margin-top: 40px;
@@ -189,17 +175,12 @@ body {
   line-height: 1.4;
   margin-bottom: 15px;
   margin-top: 40px;
-  
 }
 
-.conteudo>div>img {
-  
-  
+.conteudo > div > img {
   align-items: center;
   width: 70%;
 }
-
-
 
 @media (max-width: 768px) {
   .orion {
@@ -223,36 +204,42 @@ body {
   }
 }
 
-
-
-
-
-/* SOBRE A ORION*/
-
-
-
-/* SITE RESPONSIVO */
-
-
-
-
-/*  FIM SITE RESPONSIVO */
-
-
-
-
 /* RODAÉ DO SITE */
-
 footer {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(to bottom right, #222222, #1a1717 );
+  background: linear-gradient(to bottom right, #222222, #1a1717);
   color: #fff;
   text-align: center;
   padding: 5px;
 }
 
+@media (max-width: 767px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+  }
 
-/*  FIM DO SITERODAÉ DO SITE */
+  footer div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  footer img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+/* FIM DO RODAPÉ DO SITE */
