@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+@import url('https://fonts.googleapis.com/css?family=MedievalSharp&display=swap');
 
 * {
   margin: 0;
@@ -58,7 +58,6 @@ a:visited {
   margin: 0 10px;
 }
 
-a,
 a {
   text-decoration: none;
   color: rgb(14, 12, 12);
@@ -69,7 +68,7 @@ a:hover {
   transform: scale(1.1);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 767px) {
   body {
     overflow-x: hidden;
   }
@@ -93,7 +92,7 @@ a:hover {
 
 .topo > div > img {
   width: 200px;
-  height: 100px;
+  height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -128,20 +127,6 @@ a:hover {
 
 /* fim do BURGUER */
 
-/* FUNDO DO SITE */
-body {
-  background: linear-gradient(to bottom, #b3d0e9, #fcbf54);
-}
-
-
-
-/* FUNDO DO SITE */
-
-/* TITULO 01 */
-
-/* Estilos para o container principal */
-/* Estilos para o título 1 */
-/* Estilos para o título 1 */
 .conteudo {
   max-width: 800px;
   text-align: center;
@@ -150,10 +135,9 @@ body {
   padding-bottom: 100px; /* Adicione um preenchimento inferior para acomodar o conteúdo */
 }
 
-
 .conteudo h1 {
   font-size: 32px;
-  color: #333;
+  color: black;
   font-weight: bold;
   margin-bottom: 20px;
   margin-top: 40px;
@@ -167,10 +151,17 @@ body {
   margin-top: 40px;
 }
 
+.conteudo > div > img {
+  align-items: center;
+  width: 70%;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Estilos para o carrossel */
 .carousel {
   position: relative;
-  width: 70%;
+  width: 100%;
   height: 400px;
   overflow: hidden;
   margin: auto;
@@ -249,7 +240,7 @@ body {
 }
 
 .titulo2 h2 {
-  font-size: 24px;
+  font-size: 1.5em;
   color: #333;
   margin-bottom: 20px;
   line-height: 1.5;
@@ -262,15 +253,36 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(to bottom right, #222222, #1a1717 );
+  background: linear-gradient(to bottom right, #222222, #1a1717);
   color: #fff;
   text-align: center;
   padding: 5px;
 }
 
+@media (max-width: 767px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+  }
 
+  footer div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
 
-
+  footer img {
+    width: 30px;
+    height: 30px;
+  }
+}
 
 body {
   background-image: url(fundos/bucetinha.jpg);
@@ -279,6 +291,11 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
-/* Adicione aqui os estilos desejados para o footer */
 
-/* FIM DO SITE */
+
+
+
+
+
+/* Fonte personalizada */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
